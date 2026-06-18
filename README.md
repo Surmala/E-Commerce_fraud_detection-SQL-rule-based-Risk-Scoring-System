@@ -43,3 +43,65 @@ Investigated fraud patterns across multiple dimensions:
 - Account age — new accounts (under 30 days) showed significantly higher fraud rates
 - Monthly trend — tracked fraud rate over time to identify seasonal patterns
 - Financial exposure — quantified total revenue lost to fraud in dollar terms
+
+### 3. Velocity Check
+Flagged customers making 3 or more transactions in a single day — a standard 
+fraud signal used by banks to detect card testing and smash-and-grab behaviour.
+
+### 4. Rule-Based Risk Scoring
+Built a MySQL VIEW (fraud_risk_scores) assigning each transaction a risk score 
+from 0 to 5 based on EDA findings:  
+| Rule | Signal |
+|---|---|
+| flag_high_amount | Transaction amount above 800 |
+| flag_new_account | Account age under 30 days |
+| flag_odd_hour | Transaction between midnight and 5am |
+| flag_payment_method | Highest fraud rate payment method from EDA |
+| flag_category | Highest fraud rate product category from EDA |
+
+Thresholds were set based on actual EDA findings, not arbitrary values.
+### 5. Model Evaluation
+Evaluated scoring model at threshold score >= 3 using:
+- True Positives, False Positives, False Negatives, True Negatives
+- Precision — of all flagged transactions, how many were actual fraud
+- Recall — of all actual fraud, how many did the model catch
+
+Recall was prioritised over precision as missed fraud carries higher business 
+cost than a false flag requiring manual review.
+
+### 6. Review Queue
+Generated a prioritised list of transactions scoring 4 or 5 — the operational 
+output a fraud ops team would action daily for manual investigation.
+
+---
+
+## Key Findings
+
+- Overall fraud rate: 
+- Highest fraud rate payment method:
+- Highest fraud rate product category:
+- Peak fraud hour window: 
+- New accounts (under 30 days) fraud rate: X% vs established accounts: 
+- Total revenue lost to fraud: 
+- Scoring model recall at threshold 3:
+- Scoring model precision at threshold 3: 
+
+---
+
+## Business Impact
+The rule-based scoring system produces an auditable, explainable fraud flag for 
+every transaction — critical in regulated banking environments where black-box 
+models face compliance scrutiny. The review queue output directly reduces 
+investigator workload by prioritising highest-risk transactions rather than 
+requiring manual review of all flagged activity.
+
+---
+
+## Limitations
+- Rule thresholds are static and require periodic recalibration as fraud patterns evolve
+- No real-time scoring element — batch analysis only
+- No cost-benefit analysis of false positive rate vs investigator capacity
+- A next step would be integrating this scoring view into Power BI for a live 
+  fraud monitoring dashboard
+
+---
