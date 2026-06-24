@@ -19,7 +19,7 @@
 ![Account Age](assets/screenshots/08_alc_age_bucket.png)
 
 ### Scoring Model Evaluation
-![Scoring Model](assets/screenshots/12_evaluate the scoring model.png)
+![Scoring Model](assets/screenshots/12_evaluate_the_scoring_model.png)
 
 ### Financial Exposure
 ![Financial Exposure](assets/screenshots/10_financial_exposure.png)
