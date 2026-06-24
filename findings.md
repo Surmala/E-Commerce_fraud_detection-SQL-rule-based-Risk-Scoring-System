@@ -16,10 +16,10 @@
 ## Screenshots
 
 ### Account Age Bucket Analysis
-![Account Age](assets/screenshots/01_account_age_bucket.png)
+![Account Age](assets/screenshots/08_alc_age_bucket.png)
 
 ### Scoring Model Evaluation
-![Scoring Model](assets/screenshots/02_scoring_model.png)
+![Scoring Model](assets/screenshots/12_evaluate the scoring model.png)
 
 ### Financial Exposure
-![Financial Exposure](assets/screenshots/03_financial_exposure.png)
+![Financial Exposure](assets/screenshots/10_financial_exposure.png)
