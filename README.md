@@ -77,14 +77,14 @@ output a fraud ops team would action daily for manual investigation.
 
 ## Key Findings
 
-- Overall fraud rate: 
-- Highest fraud rate payment method:
-- Highest fraud rate product category:
-- Peak fraud hour window: 
-- New accounts (under 30 days) fraud rate: X% vs established accounts: 
-- Total revenue lost to fraud: 
-- Scoring model recall at threshold 3:
-- Scoring model precision at threshold 3: 
+- Overall fraud rate: 5% across 1.43M transactions
+- Highest fraud rate payment method: range 4.97% to 5.03% -bank transfer
+- Highest fraud rate product category:4.95% to 5.04%  -clothing
+- Peak fraud hour window: Midnight to 5am — consistently ~10% fraud rate 
+- New accounts (under 30 days) fraud rate: 22.35% fraud rate
+- Total revenue lost to fraud: $39.28M of $324.32M total — 12.11%
+- Scoring model recall at threshold 3:  18.74% at threshold score 3 
+- Scoring model precision at threshold 3: 27.98% at threshold score 3
 
 ---
 
