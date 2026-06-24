@@ -12,3 +12,14 @@
 | Device used | Negligible difference across all devices |
 | Scoring model precision | 27.98% at threshold 3 |
 | Scoring model recall | 18.74% at threshold 3 |
+
+## Screenshots
+
+### Account Age Bucket Analysis
+![Account Age](assets/screenshots/01_account_age_bucket.png)
+
+### Scoring Model Evaluation
+![Scoring Model](assets/screenshots/02_scoring_model.png)
+
+### Financial Exposure
+![Financial Exposure](assets/screenshots/03_financial_exposure.png)
