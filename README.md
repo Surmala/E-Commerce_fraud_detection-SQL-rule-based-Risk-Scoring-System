@@ -7,7 +7,7 @@ scoring system. This project mirrors the approach a fraud analyst or compliance
 analyst would take in a real banking or fintech environment.
 ---------------
 ## Dataset
-- Source: Fraudulent E-Commerce Transactions (Kaggle)
+- Source: Fraudulent E-Commerce Transactions (Kaggle) https://www.kaggle.com/datasets/shriyashjagtap/fraudulent-e-commerce-transactions
 - Size: 1,496,586 transactions across 2 files
 - Features: 16 columns including transaction amount, payment method, product 
   category, device used, customer age, account age, transaction hour
